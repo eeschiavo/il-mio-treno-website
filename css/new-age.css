@@ -158,15 +158,20 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2c92aa), color-stop(#3c9eb6), color-stop(#4baac3), color-stop(#59b7cf), to(#66c3dc));
+  background-image: linear-gradient(to right bottom, #2c92aa, #3c9eb6, #4baac3, #59b7cf, #66c3dc);
 }
 
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
   text-align: center;
+}
+
+header.masthead .header-content .logo {
+  width: 60px;
+  border-radius: 10px;
+  margin: 10px 0;
 }
 
 header.masthead .header-content h1 {
@@ -204,7 +209,13 @@ header.masthead .device-container .screen img {
 
 section.download {
   position: relative;
-  padding: 150px 0;
+  padding: 0;
+  height: 700px;
+}
+
+section.download iframe {
+  width: 100%;
+  height: 100%;
 }
 
 section.download h2 {

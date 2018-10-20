@@ -39,4 +39,7 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  //disabilito il drag delle immagini
+  $('img').on('dragstart', function(event) { event.preventDefault(); });
+
 })(jQuery); // End of use strict
