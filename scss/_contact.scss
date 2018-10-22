@@ -1,8 +1,12 @@
 // Styling for the download section
 section.contact {
+
+    background-image: linear-gradient(to right bottom,#2c92aa,#3c9eb6,#4baac3,#59b7cf,#66c3dc);
+
     position: relative;
     text-align: center;
     h2 {
+        color: white;
         margin-top: 0;
         margin-bottom: 25px;
         i {
@@ -34,6 +38,14 @@ section.contact {
                     background-color: $brand-facebook;
                     &:hover {
                         background-color: darken($brand-facebook, 5%);
+                    }
+                }
+            }
+            &.website {
+                a {
+                    background-color: $website;
+                    &:hover {
+                        background-color: darken($website, 5%);
                     }
                 }
             }

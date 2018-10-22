@@ -213,11 +213,6 @@ header.masthead .device-container .screen img {
   }
 }
 
-section.download {
-  /* Tooltip text */
-  /* Show the tooltip text when you mouse over the tooltip container */
-}
-
 section.download h2 {
   margin-top: 0;
 }
@@ -251,30 +246,6 @@ section.download .badges .badge-link img:hover {
     display: inline-block;
     margin-bottom: 0;
   }
-}
-
-section.download .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  /* If you want dots under the hoverable text */
-}
-
-section.download .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-section.download .tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 
 section.video {
@@ -421,11 +392,14 @@ section.cta .overlay {
 }
 
 section.contact {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2c92aa), color-stop(#3c9eb6), color-stop(#4baac3), color-stop(#59b7cf), to(#66c3dc));
+  background-image: linear-gradient(to right bottom, #2c92aa, #3c9eb6, #4baac3, #59b7cf, #66c3dc);
   position: relative;
   text-align: center;
 }
 
 section.contact h2 {
+  color: white;
   margin-top: 0;
   margin-bottom: 25px;
 }
@@ -462,6 +436,14 @@ section.contact ul.list-social li.social-facebook a {
 
 section.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
+}
+
+section.contact ul.list-social li.website a {
+  background-color: #00bdbd;
+}
+
+section.contact ul.list-social li.website a:hover {
+  background-color: #00a4a4;
 }
 
 section.contact ul.list-social li.social-google-plus a {
