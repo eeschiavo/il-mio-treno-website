@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
@@ -33,171 +33,217 @@
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a> -->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Scopri</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Funzionalità</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contatti</a>
-            </li>
-          </ul>
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#video">Scopri</a>
+                        <!-- <button class="nav-link" onClick="animateItem('#video')">Scopri</button> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#slideshow">Immagini</a>
+                        <!-- <button class="nav-link" onClick="animateItem('#slideshow')">Immagini</button> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#features">Funzionalità</a>
+                        <!-- <button class="nav-link" onClick="animateItem('#features')">Funzionalità</button> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+                        <!-- <button class="nav-link" onClick="animateItem('#download')">Download</button> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contatti</a>
+                        <!-- <button class="nav-link" onClick="animateItem('#contact')">Contatti</button> -->
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-                <div>
-                    <img class="logo" src="img/logo.png" onClick="window.location.reload()" />
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <div>
+                            <img class="logo" src="img/logo.png" onClick="window.location.reload()" />
+                        </div>
+                        <h1 class="mb-5">Il modo migliore per tenere sotto controllo i treni che prendi tutti i giorni, semplicemente e con efficacia</h1>
+                        <a href="#video" class="btn btn-outline btn-xl js-scroll-trigger">Scopri di più</a>
+                    </div>
                 </div>
-              <h1 class="mb-5">Il modo migliore per tenere sotto controllo i treni che prendi tutti i giorni, semplicemente e con efficacia</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Scopri di più</a>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <img src="img/iPhoneXWhite.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <img src="img/iPhoneXWhite.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
+        </div>
+    </header>
+
+    <section class="video" id="video">
+        <iframe src="https://www.youtube.com/embed/UP3SrJsnPmE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe>
+    </section>
+
+    <section class="slideshow" id="slideshow">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Tante funzionalità a portata di tap</h2>
+                <p class="text-muted">Stato dei treni, tabellone delle stazioni, avvisi sulla circolazione</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="carousel">
+                    <div class="carousel-img-container"><img src="img/screenshots/1.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/2.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/3.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/4.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/5.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/6.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/7.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/8.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/9.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/10.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/11.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/12.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/13.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/14.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/15.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/16.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/17.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/18.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/19.png" /></div>
+                    <div class="carousel-img-container"><img src="img/screenshots/20.png" /></div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Tutto ciò che ti serve in un'unica app</h2>
+                <p class="text-muted">Con un design moderno ed efficace</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="screen">
+                        <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                        <img src="img/features.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-clock"></i>
+                                    <h3>Ritardo dei treni</h3>
+                                    <p class="text-muted">Scopri istantaneamente il ritardo del tuo treno</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-align-left"></i>
+                                    <h3>Tabelloni delle stazioni</h3>
+                                    <p class="text-muted">Consulta i tabelloni di partenze e arrivo delle stazioni di tutta Italia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-train"></i>
+                                    <h3>Andamento del treno</h3>
+                                    <p class="text-muted">Verifica la posizione attuale del treno ed il suo andamento</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <h3>Avvisi</h3>
+                                    <p class="text-muted">Leggi tutti gli ultimi avvisi relativi a tutta la rete ferroviaria italiana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download" id="download">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <h2 class="section-heading">Scarica l'app</h2>
+              <p>L'applicazione è stata creata esclusivamente per i dispositivi Apple&reg;</p>
+              <div class="badges">
+                <button class="badge-link"><img src="img/app-store-badge.svg" title="Non disponibile"></button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-
-    <section class="download" id="download">
-        <iframe src="https://www.youtube.com/embed/UP3SrJsnPmE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe>
-
-        <!-- <embed  src="https://www.youtube.com/embed/UP3SrJsnPmE"> -->
-
-        <!-- <embed  wmode="opaque" salign="tl" allowscriptaccess="never" allowfullscreen="true" scale="scale" quality="high" style="display: block;" src="https://www.youtube.com/embed/UP3SrJsnPmE"> -->
-
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </section>
-
-    <section class="features" id="features">
-      <div class="container" style="max-width:100%;padding:0">
-        <div class="section-heading text-center">
-          <h2>Tante funzionalità a portata di tap</h2>
-          <p class="text-muted">Stato dei treni, tabellone delle stazioni, avvisi sulla circolazione</p>
-          <hr>
-        </div>
-        <div class="row" style="max-width: 100%;margin: 0;">
-
-            <div class="carousel" style="max-width: 100%">
-                <div class="carousel-img-container"><img src="img/screenshots/1.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/2.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/3.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/4.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/5.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/6.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/7.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/8.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/9.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/10.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/11.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/12.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/13.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/14.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/15.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/16.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/17.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/18.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/19.png" /></div>
-                <div class="carousel-img-container"><img src="img/screenshots/20.png" /></div>
-            </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="cta-content">
-        <div class="container">
-          <h2>Stop waiting.<br>Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
-        </div>
-      </div>
-      <div class="overlay"></div>
     </section>
 
     <section class="contact bg-primary" id="contact">
-      <div class="container">
-        <h2>We
+        <div class="container">
+            <h2>We
           <i class="fas fa-heart"></i>
           new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
-            <a href="#">
+            <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter">
+                    <a href="#">
               <i class="fab fa-twitter"></i>
             </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="#">
+                </li>
+                <li class="list-inline-item social-facebook">
+                    <a href="#">
               <i class="fab fa-facebook-f"></i>
             </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
+                </li>
+                <li class="list-inline-item social-google-plus">
+                    <a href="#">
               <i class="fab fa-google-plus-g"></i>
             </a>
-          </li>
-        </ul>
-      </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <footer>
-      <div class="container">
-        <p>&copy; Your Website 2018. All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
+        <div class="container">
+            <p>&copy; Your Website 2018. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
@@ -214,6 +260,6 @@
     <script src="js/new-age.min.js"></script>
     <!-- <script src="js/carousel.js"></script> -->
 
-  </body>
+</body>
 
 </html>

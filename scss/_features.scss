@@ -1,9 +1,18 @@
 // Styling for the features section
 section.features {
+
+    position: relative;
+    background-image: linear-gradient(to right bottom, #5394a1, #478895, #3a7d89, #2d717d, #1f6672);
+
+    .text-muted {
+        color: white !important;
+    }
+
     .section-heading {
         margin-bottom: 100px;
         h2 {
             margin-top: 0;
+            color: white;
         }
         p {
             margin-bottom: 0;
@@ -26,28 +35,18 @@ section.features {
         text-align: center;
         h3 {
             font-size: 30px;
+            color: white;
         }
         i {
             font-size: 80px;
             display: block;
             margin-bottom: 15px;
-            background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-            background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
+            // background: -webkit-linear-gradient(to left, #FA5457, #C1152E);
+            // background: linear-gradient(to left, #FA5457, #C1152E);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
         }
     }
 
-    .carousel {
-        .carousel-img-container {
-
-            max-width: 350px !important;
-            img {
-                max-height: 700px;
-            }
-
-
-        }
-
-    }
 }

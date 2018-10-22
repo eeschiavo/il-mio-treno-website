@@ -1,0 +1,36 @@
+// Styling for the slideshow section
+section.slideshow {
+    position: relative;
+    .section-heading {
+        margin-bottom: 100px;
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .row {
+        max-width: 100%;
+        margin: 0;
+    }
+    .carousel {
+
+        max-width: 100%;
+
+        .carousel-img-container {
+
+            max-width: 350px !important;
+            img {
+                max-height: 700px;
+            }
+
+
+        }
+
+    }
+}

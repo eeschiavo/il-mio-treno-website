@@ -4,11 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -16,13 +19,14 @@ body {
 }
 
 a {
-  color: #fdcc52;
+  color: #007AFF;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: #0062cc;
+  outline: none !important;
 }
 
 hr {
@@ -54,6 +58,7 @@ p {
 }
 
 section {
+  position: relative;
   padding: 100px 0;
 }
 
@@ -72,14 +77,14 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: #007AFF;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: #0062cc;
 }
 
 #mainNav .navbar-toggler {
@@ -96,7 +101,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fdcc52 !important;
+  color: #007AFF !important;
   background-color: transparent;
 }
 
@@ -111,7 +116,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: #007AFF;
 }
 
 @media (min-width: 992px) {
@@ -141,7 +146,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #fdcc52;
+    color: #007AFF;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -149,7 +154,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #fdcc52;
+    color: #007AFF;
   }
 }
 
@@ -209,25 +214,24 @@ header.masthead .device-container .screen img {
 }
 
 section.download {
-  position: relative;
-  padding: 0;
-  height: 100%;
-}
-
-section.download iframe {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
+  /* Tooltip text */
+  /* Show the tooltip text when you mouse over the tooltip container */
 }
 
 section.download h2 {
-  font-size: 50px;
   margin-top: 0;
 }
 
 section.download .badges .badge-link {
+  border: none;
+  background: none;
+  cursor: pointer;
   display: block;
   margin-bottom: 25px;
+}
+
+section.download .badges .badge-link:focus {
+  outline: none;
 }
 
 section.download .badges .badge-link:last-child {
@@ -238,6 +242,10 @@ section.download .badges .badge-link img {
   height: 60px;
 }
 
+section.download .badges .badge-link img:hover {
+  opacity: .5;
+}
+
 @media (min-width: 768px) {
   section.download .badges .badge-link {
     display: inline-block;
@@ -245,10 +253,88 @@ section.download .badges .badge-link img {
   }
 }
 
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
+section.download .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* If you want dots under the hoverable text */
+}
+
+section.download .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+section.download .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+section.video {
+  position: relative;
+  padding: 0;
+  height: 100%;
+}
+
+section.video iframe {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+section.slideshow {
+  position: relative;
+}
+
+section.slideshow .section-heading {
+  margin-bottom: 100px;
+}
+
+section.slideshow .section-heading h2 {
+  margin-top: 0;
+}
+
+section.slideshow .section-heading p {
+  margin-bottom: 0;
+}
+
+section.slideshow .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+section.slideshow .row {
+  max-width: 100%;
+  margin: 0;
+}
+
+section.slideshow .carousel {
+  max-width: 100%;
+}
+
+section.slideshow .carousel .carousel-img-container {
+  max-width: 350px !important;
+}
+
+section.slideshow .carousel .carousel-img-container img {
+  max-height: 700px;
+}
+
+section.features {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#5394a1), color-stop(#478895), color-stop(#3a7d89), color-stop(#2d717d), to(#1f6672));
+  background-image: linear-gradient(to right bottom, #5394a1, #478895, #3a7d89, #2d717d, #1f6672);
+}
+
+section.features .text-muted {
+  color: white !important;
 }
 
 section.features .section-heading {
@@ -257,6 +343,7 @@ section.features .section-heading {
 
 section.features .section-heading h2 {
   margin-top: 0;
+  color: white;
 }
 
 section.features .section-heading p {
@@ -287,24 +374,14 @@ section.features .feature-item {
 
 section.features .feature-item h3 {
   font-size: 30px;
+  color: white;
 }
 
 section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-section.features .carousel .carousel-img-container {
-  max-width: 350px !important;
-}
-
-section.features .carousel .carousel-img-container img {
-  max-height: 700px;
+  color: white;
 }
 
 section.cta {
@@ -344,6 +421,7 @@ section.cta .overlay {
 }
 
 section.contact {
+  position: relative;
   text-align: center;
 }
 
@@ -420,13 +498,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #007AFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#007AFF), to(#006ee6));
+  background: linear-gradient(#007AFF, #006ee6);
 }
 
 .text-primary {
-  color: #fdcc52;
+  color: #007AFF;
 }
 
 .no-gutter > [class*='col-'] {
