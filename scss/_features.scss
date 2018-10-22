@@ -37,4 +37,17 @@ section.features {
             -webkit-text-fill-color: transparent;
         }
     }
+
+    .carousel {
+        .carousel-img-container {
+
+            max-width: 350px !important;
+            img {
+                max-height: 700px;
+            }
+
+
+        }
+
+    }
 }

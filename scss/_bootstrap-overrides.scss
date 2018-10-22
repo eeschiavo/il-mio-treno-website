@@ -22,9 +22,10 @@
     &:focus,
     &:active,
     &.active {
-        color: white;
-        border-color: $theme-primary;
-        background-color: $theme-primary;
+        outline: none !important;
+        color: #333;
+        border-color: white;
+        background-color: white;
     }
 }
 

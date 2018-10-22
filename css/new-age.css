@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -210,12 +211,13 @@ header.masthead .device-container .screen img {
 section.download {
   position: relative;
   padding: 0;
-  height: 700px;
+  height: 100%;
 }
 
 section.download iframe {
   width: 100%;
   height: 100%;
+  overflow: scroll;
 }
 
 section.download h2 {
@@ -295,6 +297,14 @@ section.features .feature-item i {
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+section.features .carousel .carousel-img-container {
+  max-width: 350px !important;
+}
+
+section.features .carousel .carousel-img-container img {
+  max-height: 700px;
 }
 
 section.cta {
@@ -431,9 +441,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
-  color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  outline: none !important;
+  color: #333;
+  border-color: white;
+  background-color: white;
 }
 
 .btn {

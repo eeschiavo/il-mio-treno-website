@@ -26,6 +26,10 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
+    <!-- Slick-carousel -->
+    <link rel="stylesheet" href="vendor/slick-carousel/slick.css">
+    <link rel="stylesheet" href="vendor/slick-carousel/slick-theme.css">
+
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
@@ -87,8 +91,13 @@
       </div>
     </header>
 
-    <section class="download bg-primary text-center" id="download">
-        <iframe src="https://www.youtube.com/embed/UP3SrJsnPmE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="download" id="download">
+        <iframe src="https://www.youtube.com/embed/UP3SrJsnPmE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen scrolling="no"></iframe>
+
+        <!-- <embed  src="https://www.youtube.com/embed/UP3SrJsnPmE"> -->
+
+        <!-- <embed  wmode="opaque" salign="tl" allowscriptaccess="never" allowfullscreen="true" scale="scale" quality="high" style="display: block;" src="https://www.youtube.com/embed/UP3SrJsnPmE"> -->
+
       <!-- <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
@@ -104,64 +113,37 @@
     </section>
 
     <section class="features" id="features">
-      <div class="container">
+      <div class="container" style="max-width:100%;padding:0">
         <div class="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
+          <h2>Tante funzionalità a portata di tap</h2>
+          <p class="text-muted">Stato dei treni, tabellone delle stazioni, avvisi sulla circolazione</p>
           <hr>
         </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
+        <div class="row" style="max-width: 100%;margin: 0;">
+
+            <div class="carousel" style="max-width: 100%">
+                <div class="carousel-img-container"><img src="img/screenshots/1.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/2.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/3.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/4.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/5.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/6.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/7.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/8.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/9.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/10.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/11.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/12.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/13.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/14.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/15.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/16.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/17.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/18.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/19.png" /></div>
+                <div class="carousel-img-container"><img src="img/screenshots/20.png" /></div>
             </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
-                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
-                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
-                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -225,8 +207,12 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Slick-carousel -->
+    <script src="vendor/slick-carousel/slick.js"></script>
+
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
+    <!-- <script src="js/carousel.js"></script> -->
 
   </body>
 
