@@ -3,6 +3,7 @@ section.slideshow {
     position: relative;
     .section-heading {
         margin-bottom: 100px;
+        padding: 0 30px;
         h2 {
             margin-top: 0;
         }
@@ -12,6 +13,7 @@ section.slideshow {
     }
     .container {
         max-width: 100%;
+        overflow-x: hidden;
         padding: 0;
     }
     .row {
@@ -28,9 +30,14 @@ section.slideshow {
             img {
                 max-height: 700px;
             }
-
-
         }
 
     }
+
+    @media only screen and (max-width:375px) {
+        img {
+            max-height: 370px !important;
+        }
+    }
+
 }

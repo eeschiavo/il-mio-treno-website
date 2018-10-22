@@ -266,6 +266,7 @@ section.slideshow {
 
 section.slideshow .section-heading {
   margin-bottom: 100px;
+  padding: 0 30px;
 }
 
 section.slideshow .section-heading h2 {
@@ -278,6 +279,7 @@ section.slideshow .section-heading p {
 
 section.slideshow .container {
   max-width: 100%;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -296,6 +298,12 @@ section.slideshow .carousel .carousel-img-container {
 
 section.slideshow .carousel .carousel-img-container img {
   max-height: 700px;
+}
+
+@media only screen and (max-width: 375px) {
+  section.slideshow img {
+    max-height: 370px !important;
+  }
 }
 
 section.features {
