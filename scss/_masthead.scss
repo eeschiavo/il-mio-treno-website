@@ -12,6 +12,10 @@ header.masthead {
     // background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     background-image: linear-gradient(to right bottom, #2c92aa, #3c9eb6, #4baac3, #59b7cf, #66c3dc);
 
+    .row.h-100 {
+        align-items: center;
+    }
+
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;

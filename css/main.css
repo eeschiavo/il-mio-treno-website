@@ -168,6 +168,12 @@ header.masthead {
   background-image: linear-gradient(to right bottom, #2c92aa, #3c9eb6, #4baac3, #59b7cf, #66c3dc);
 }
 
+header.masthead .row.h-100 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
@@ -404,6 +410,7 @@ section.contact {
   background-image: linear-gradient(to right bottom, #2c92aa, #3c9eb6, #4baac3, #59b7cf, #66c3dc);
   position: relative;
   text-align: center;
+  padding: 50px;
 }
 
 section.contact h2 {
