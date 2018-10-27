@@ -256,7 +256,7 @@ section.download .badges .badge-link img:hover {
 
 section.video {
   position: relative;
-  padding: 0;
+  padding: 30px;
   height: 100%;
 }
 
