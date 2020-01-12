@@ -1,8 +1,8 @@
 {
-    "title": "New Age",
-    "name": "startbootstrap-new-age",
-    "version": "5.0.0",
-    "description": "A one page app landing page HTML theme for Bootstrap.",
+    "title": "IlMioTreno website",
+    "name": "il-mio-treno-website",
+    "version": "1.0.1",
+    "description": "Official page of IlMioTreno app",
     "keywords": [
         "css",
         "sass",
@@ -11,19 +11,15 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/new-age",
+    "homepage": "https://trains.ernestoschiavo.it",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-new-age/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/eeschiavo/il-mio-treno-website/issues"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "Ernesto Schiavo",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
+        "url": "https://github.com/eeschiavo/il-mio-treno-website.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.3.1",
